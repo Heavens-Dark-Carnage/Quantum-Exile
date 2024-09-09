@@ -1,68 +1,81 @@
-body {
-    font-family: 'Arial', sans-serif;
+/* Reset some basic styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #1e1e2e;
-    color: white;
-    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: url('path-to-your-background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
 }
 
 header {
-    background-color: #27293d;
+    background: rgba(0, 0, 0, 0.7);
     padding: 20px 0;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0 20px;
 }
 
 .navbar h1 {
-    font-size: 2em;
-    margin: 0;
+    font-size: 2.5em;
+    color: #fca311;
 }
 
 .navbar nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    list-style: none;
     display: flex;
     gap: 20px;
 }
 
 .navbar nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #fca311;
 }
 
 #hero {
-    background: url('path-to-your-hero-image.jpg') center/cover no-repeat;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: rgba(0, 0, 0, 0.6);
     text-align: center;
 }
 
 #hero h2 {
-    font-size: 3em;
+    font-size: 3.5em;
+    margin-bottom: 20px;
 }
 
 #hero p {
-    font-size: 1.5em;
+    font-size: 1.3em;
     max-width: 600px;
+    margin-bottom: 30px;
 }
 
 button {
     background-color: #fca311;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 30px;
     font-size: 1.2em;
     cursor: pointer;
-    margin-top: 20px;
+    transition: background 0.3s ease;
+    color: #000;
 }
 
 button:hover {
@@ -70,15 +83,38 @@ button:hover {
 }
 
 section {
-    padding: 50px 20px;
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 #about, #characters, #worldbuilding {
-    background-color: #2e2f4f;
     margin-top: 20px;
+}
+
+#characters ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 footer {
     background-color: #27293d;
     padding: 30px 0;
+    text-align: center;
+}
+
+footer h2 {
+    color: #fca311;
+}
+
+footer a {
+    color: #fca311;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
 }
